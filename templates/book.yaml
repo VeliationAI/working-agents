@@ -1,0 +1,9 @@
+book_number: "2"
+book_id: briefing-an-agent
+title: Briefing an Agent
+subtitle: How a real job becomes a page a person and a loop can share
+edition: "0.1"
+edition_label: Outline
+edition_date: 20 November 2026
+chapters:
+  - 00-preface.md

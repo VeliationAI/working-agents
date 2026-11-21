@@ -1,0 +1,12 @@
+# Edit these before you share anything publicly.
+# One change here updates the PDF cover, the copyright page, and the audio intro.
+
+series_title: Working Agents
+series_tagline: Free field guides on AI agents that do real work.
+author: Your Name
+contact: https://www.linkedin.com/in/your-handle
+license: CC BY 4.0
+license_url: https://creativecommons.org/licenses/by/4.0/
+# Preview narration only. See publishing/audio.md before you publish audio.
+voice: en-US-AndrewNeural
+voice_rate: "-8%"

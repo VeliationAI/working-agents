@@ -1,0 +1,24 @@
+Working Agents, by the author named in series.yaml, is licensed under
+the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt the books, the handout, and the narration scripts,
+including commercially, if you do all of the following:
+
+- Give credit. Name the author, the series (Working Agents), and the book title.
+- Link the license: https://creativecommons.org/licenses/by/4.0/
+- Note what you changed, if you changed anything.
+- Do not suggest that the author endorses your adaptation.
+
+This is a plain-language summary. The legal license is the text at the URL above.
+
+Once you publish a version under this license, people who received it may keep
+sharing that version on these terms. Choose the license before the first public
+post. If you would rather others not sell your books, switch the license in
+series.yaml to CC BY-NC 4.0 before you publish, and use that license URL:
+
+https://creativecommons.org/licenses/by-nc/4.0/
+
+The preview audio in dist/audio is a private editing aid. Read
+publishing/audio.md before you upload any generated voice.

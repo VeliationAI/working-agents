@@ -1,0 +1,20 @@
+book_number: "1"
+book_id: the-agent-loop
+title: The Agent Loop
+subtitle: What an AI agent is, when to use one, and how the loop actually works
+edition: "0.9"
+edition_label: Public draft
+edition_date: 20 November 2026
+chapters:
+  - 00-preface.md
+  - 01-chatbot-and-agent.md
+  - 02-the-loop.md
+  - 03-goals.md
+  - 04-tools.md
+  - 05-memory.md
+  - 06-the-check.md
+  - 07-three-kinds-of-work.md
+  - 08-the-one-page-brief.md
+  - 09-failures.md
+  - 10-monday.md
+  - 11-back-matter.md
