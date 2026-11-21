@@ -1,0 +1,17 @@
+book_number: "3"
+book_id: tools-and-permissions
+title: Tools and Permissions
+subtitle: Read, draft, write, and the limits that keep a loop honest
+edition: "0.9"
+edition_label: Public draft
+edition_date: 20 November 2026
+chapters:
+  - 00-preface.md
+  - 01-read-draft-write.md
+  - 02-least-privilege.md
+  - 03-approval.md
+  - 04-browser-and-computer.md
+  - 05-secrets.md
+  - 06-the-log.md
+  - 07-monday.md
+  - 08-back-matter.md

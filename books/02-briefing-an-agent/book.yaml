@@ -1,0 +1,17 @@
+book_number: "2"
+book_id: briefing-an-agent
+title: Briefing an Agent
+subtitle: How a real job becomes a page a person and a loop can share
+edition: "0.9"
+edition_label: Public draft
+edition_date: 20 November 2026
+chapters:
+  - 00-preface.md
+  - 01-brief-is-the-product.md
+  - 02-context-you-forget.md
+  - 03-acceptance-tests.md
+  - 04-three-jobs.md
+  - 05-weekly-job.md
+  - 06-one-instruction.md
+  - 07-monday.md
+  - 08-back-matter.md

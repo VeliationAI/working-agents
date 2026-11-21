@@ -1,0 +1,17 @@
+book_number: "6"
+book_id: when-the-loop-goes-wrong
+title: When the Loop Goes Wrong
+subtitle: Traces, exams, and what to do after a bad run
+edition: "0.9"
+edition_label: Public draft
+edition_date: 20 November 2026
+chapters:
+  - 00-preface.md
+  - 01-read-a-trace.md
+  - 02-ten-tasks.md
+  - 03-graders.md
+  - 04-prompt-tweaks.md
+  - 05-incident-writeup.md
+  - 06-back-to-workflow.md
+  - 07-monday.md
+  - 08-back-matter.md

@@ -1,4 +1,4 @@
-"""Load the series config and the markdown manuscript."""
+"""Load series config and markdown manuscripts for any Working Agents book."""
 
 from __future__ import annotations
 
@@ -6,7 +6,41 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-BOOK_DIR = ROOT / "books" / "01-the-agent-loop"
+BOOKS_DIR = ROOT / "books"
+
+BOOK_ORDER = [
+    "01-the-agent-loop",
+    "02-briefing-an-agent",
+    "03-tools-and-permissions",
+    "04-memory",
+    "05-agents-at-work",
+    "06-when-the-loop-goes-wrong",
+    "07-more-than-one-agent",
+    "08-shipping-an-agent",
+]
+
+
+def list_books() -> list[Path]:
+    found = []
+    for book_id in BOOK_ORDER:
+        path = BOOKS_DIR / book_id
+        if (path / "book.yaml").exists():
+            found.append(path)
+    return found
+
+
+def resolve_book(book_id: str | None = None) -> Path:
+    if book_id is None:
+        return BOOKS_DIR / BOOK_ORDER[0]
+    if book_id.isdigit():
+        index = int(book_id) - 1
+        if index < 0 or index >= len(BOOK_ORDER):
+            raise SystemExit(f"Unknown book number: {book_id}")
+        book_id = BOOK_ORDER[index]
+    path = BOOKS_DIR / book_id
+    if not (path / "book.yaml").exists():
+        raise SystemExit(f"No book.yaml in {path}")
+    return path
 
 
 def load_yaml(path: Path) -> dict:
@@ -152,17 +186,18 @@ def parse_markdown(text: str) -> dict:
     return {"kind": meta.get("kind", "chapter"), "title": meta.get("title", "Untitled"), "blocks": blocks}
 
 
-def load_book() -> tuple[dict, dict, list[dict]]:
+def load_book(book_id: str | None = None) -> tuple[dict, dict, list[dict], Path]:
+    book_dir = resolve_book(book_id)
     series = load_yaml(ROOT / "series.yaml")
-    book = load_yaml(BOOK_DIR / "book.yaml")
+    book = load_yaml(book_dir / "book.yaml")
     chapters = []
-    manuscript = BOOK_DIR / "manuscript"
+    manuscript = book_dir / "manuscript"
     for name in book["chapters"]:
         path = manuscript / name
         parsed = parse_markdown(substitute(path.read_text(encoding="utf-8"), series, book))
         parsed["source"] = name
         chapters.append(parsed)
-    return series, book, chapters
+    return series, book, chapters, book_dir
 
 
 def word_count(chapters: list[dict]) -> int:
@@ -175,3 +210,8 @@ def word_count(chapters: list[dict]) -> int:
             else:
                 total += len(str(payload).split())
     return total
+
+
+def pdf_filename(book: dict) -> str:
+    slug = re.sub(r"[^A-Za-z0-9]+", "-", book["title"]).strip("-")
+    return f"{slug}.pdf"

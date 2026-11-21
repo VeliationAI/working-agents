@@ -1,0 +1,17 @@
+book_number: "4"
+book_id: memory
+title: Memory
+subtitle: What stays in view, what is retrieved, and what must be deleted
+edition: "0.9"
+edition_label: Public draft
+edition_date: 20 November 2026
+chapters:
+  - 00-preface.md
+  - 01-five-shelves.md
+  - 02-retrieval.md
+  - 03-contradiction.md
+  - 04-customer-data.md
+  - 05-fresh-thread.md
+  - 06-memory-policy.md
+  - 07-monday.md
+  - 08-back-matter.md

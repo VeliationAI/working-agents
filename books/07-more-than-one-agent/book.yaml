@@ -1,0 +1,17 @@
+book_number: "7"
+book_id: more-than-one-agent
+title: More Than One Agent
+subtitle: Handoffs, shared state, and the many times one loop is enough
+edition: "0.9"
+edition_label: Public draft
+edition_date: 20 November 2026
+chapters:
+  - 00-preface.md
+  - 01-singular-goal.md
+  - 02-handoffs.md
+  - 03-roles.md
+  - 04-cost-and-debug.md
+  - 05-when-a-team.md
+  - 06-default-one.md
+  - 07-monday.md
+  - 08-back-matter.md

@@ -1,0 +1,15 @@
+---
+description: Always commit and push completed work to GitHub
+alwaysApply: true
+---
+
+# Always push to GitHub
+
+After finishing a meaningful change set (feature, fix, content, or challenge build):
+
+1. Commit the relevant files (skip secrets, `.env`, private audio previews, large local caches).
+2. Push to `origin` on the current branch without waiting to be asked.
+3. If the project has no GitHub remote yet, create a public repo with `gh repo create` and push.
+4. When a downloadable deliverable matters (PDF, release asset), create or update a GitHub Release.
+
+Do this at the end of the task by default. Only skip push if the user explicitly says not to, or if auth/network blocks it — then report the blocker.

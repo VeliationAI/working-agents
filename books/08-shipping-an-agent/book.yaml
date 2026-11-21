@@ -1,0 +1,17 @@
+book_number: "8"
+book_id: shipping-an-agent
+title: Shipping an Agent
+subtitle: Cost ceilings, fallbacks, and a loop in front of people who did not build it
+edition: "0.9"
+edition_label: Public draft
+edition_date: 20 November 2026
+chapters:
+  - 00-preface.md
+  - 01-laptop-to-tuesday.md
+  - 02-cost-ceiling.md
+  - 03-fallback.md
+  - 04-tell-the-user.md
+  - 05-changing-briefs.md
+  - 06-support.md
+  - 07-monday.md
+  - 08-back-matter.md
