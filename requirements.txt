@@ -1,2 +1,10 @@
-fpdf2==2.9.0
-edge-tts==7.3.1
+ultralytics
+opencv-python
+numpy
+pandas
+matplotlib
+pillow
+tqdm
+jupyterlab
+ipykernel
+pyyaml
